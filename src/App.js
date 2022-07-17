@@ -6,12 +6,7 @@ function App() {
 
   return (
     <div className="App">
-<<<<<<< HEAD
-      <h1>Meliné</h1>
-        
-=======
       <Navbar />
->>>>>>> desafio2Menu
     </div>
   );
 }
