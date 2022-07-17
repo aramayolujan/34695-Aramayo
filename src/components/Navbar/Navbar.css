@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    background-color: #FBEFFA;
+
+}
+
+.Navbar{
+    background-color: #F2CFF0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.nombreMarcaH4{
+    background-color: #F2CFF0;
+}
+
+.nombreMarca{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 2em;
+    color: #343432;
+    background-color: #F2CFF0;
+    
+}
+
+.contenedorCategorias{
+    display: flex;
+    align-items: center;
+    background-color: #F2CFF0;
+}
+
+.botonCategorias{
+    background-color: transparent;
+    border: none;
+    color: #151514;
+    height: 37px;
+    width: 92px;
+}
+
+.botonCategorias:hover{
+    background-color: #F6DFF5;
+}
+
