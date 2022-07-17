@@ -1,0 +1,20 @@
+.carrito {
+    height: 25px;
+    width: 25px;
+    background-color: #F2CFF0;
+    margin: 1em;
+    margin-left: 9em;
+}
+
+.numeroCarrito{
+    display: flex;
+    justify-content: start;
+    background-color: #F2CFF0;
+    align-items: center;
+}
+
+.contenedorCarrito{
+    background-color: #F2CFF0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
