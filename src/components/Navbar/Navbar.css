@@ -28,6 +28,7 @@
 .contenedorCategorias{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #F2CFF0;
 }
 

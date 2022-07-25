@@ -1,0 +1,12 @@
+.contador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorContador{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 7em;
+
+}

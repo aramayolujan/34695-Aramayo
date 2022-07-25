@@ -3,14 +3,15 @@
     width: 25px;
     background-color: #F2CFF0;
     margin: 1em;
-    margin-left: 9em;
+   margin-left: 17em;
 }
 
 .numeroCarrito{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: #F2CFF0;
     align-items: center;
+    
 }
 
 .contenedorCarrito{

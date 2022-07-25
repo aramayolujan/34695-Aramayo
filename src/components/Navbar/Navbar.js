@@ -8,8 +8,8 @@ const Navbar = () => {
                 <h4 className='nombreMarcaH4'>Meliné</h4>
             </div>
             <div className='contenedorCategorias'>
-                <button className='botonCategorias' href='#'>Manicuria</button>
-                <button className='botonCategorias' href='#'>Pedicuria</button>
+                <button className='botonCategorias' href='#'>Esmaltes</button>
+                <button className='botonCategorias' href='#'>Construcción</button>
                 <button className='botonCategorias' href='#'>Decoración</button>
                 <button className='botonCategorias' href='#'>Herramientas</button>
             </div>   
