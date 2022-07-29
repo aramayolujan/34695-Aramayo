@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ItemListContainer greeting='PROXIMAMENTE TIENDA MELINÉ'/>
+      <ItemListContainer greeting='PROXIMAMENTE TIENDA ANGELA BRESCIANO'/>
       <Counter stock={10} onAdd={handleOnAdd}/>
 
     </div>

@@ -1,7 +1,7 @@
 .carrito {
     height: 25px;
     width: 25px;
-    background-color: #F2CFF0;
+    background-color: #F6DFF5;
     margin: 1em;
    margin-left: 17em;
 }
@@ -9,13 +9,13 @@
 .numeroCarrito{
     display: flex;
     justify-content: flex-start;
-    background-color: #F2CFF0;
+    background-color: #F6DFF5;
     align-items: center;
     
 }
 
 .contenedorCarrito{
-    background-color: #F2CFF0;
+    background-color: #F6DFF5;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }

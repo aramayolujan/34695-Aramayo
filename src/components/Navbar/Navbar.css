@@ -1,18 +1,18 @@
 *{
     margin: 0;
-    background-color: #F6DFF5;
+    background-color: #FDEEF8;
 
 }
 
 .Navbar{
-    background-color: #F2CFF0;
+    background-color: #F6DFF5;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     
 }
 
 .nombreMarcaH4{
-    background-color: #F2CFF0;
+    background-color: #F6DFF5;
 }
 
 .nombreMarca{
@@ -20,8 +20,8 @@
     align-items: center;
     justify-content: start;
     margin-left: 2em;
-    color: #343432;
-    background-color: #F2CFF0;
+    color: #343432; 
+    background-color: #F6DFF5;
     
 }
 
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F2CFF0;
+    background-color: #F6DFF5;
 }
 
 .botonCategorias{
