@@ -1,6 +1,6 @@
 const products = [
     {
-        id:1,
+        id:'1',
         name: 'Semipermanente',
         price: 1350,
         category: 'esmaltes',
@@ -9,7 +9,7 @@ const products = [
         description: 'Tono #017'
     },
     {
-        id:8,
+        id:'2',
         name: 'Acryl Gel',
         price: 2600,
         category: 'construccion',
@@ -18,7 +18,7 @@ const products = [
         description: 'Tono Cover Pink Shinner'
     },
     {
-        id:16,
+        id:'3',
         name: 'Aplique Mariposa x2',
         price: 200,
         category: 'decoracion',
@@ -27,7 +27,7 @@ const products = [
         description: 'Tono Holo Rosa'
     },
     {
-        id:24,
+        id:'4',
         name: 'Pincel Kolinsky',
         price: 1870,
         category: 'herramientas',
