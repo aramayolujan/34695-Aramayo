@@ -54,3 +54,11 @@ export const getProductById = (id) => {
         }, 100)
     })
 }
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve => {
+        setTimeout (() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 100)
+    }))
+}

@@ -1,17 +1,24 @@
 import './ItemListContainer.css'
-import { getProductsNails } from '../../asyncMock'
+import { getProductsNails, getProductsByCategory } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 
 const ItemListContainer = ({greeting}) => {
     const [products , setProducts]= useState([])
 
+    const { categoryId } = useParams()
+
     useEffect(() => {
-        getProductsNails().then(products =>{
+        const asyncFuntion = categoryId ? getProductsByCategory : getProductsNails
+
+        asyncFuntion(categoryId).then(products => {
             setProducts(products)
+        }).catch(error => {
+            console.log(error)
         })
-    },[]
+    },[categoryId]
     )
 
     return(
