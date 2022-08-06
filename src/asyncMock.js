@@ -42,6 +42,14 @@ export const getProductsNails = () => {
     return new Promise((resolve => {
         setTimeout (() => {
             resolve(products)
-        }, 3000)
+        }, 100)
     }))
+}
+
+export const getProductById = (id) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 100)
+    })
 }

@@ -1,3 +1,5 @@
+
+
 .imgProducto {
     height: 200px;
     width: 180px;
@@ -7,3 +9,22 @@
     transform: scale(1.4, 1.4);
     transition: 2s;
   }
+.btnVerDetalle{
+    color: black;
+    text-decoration: none;
+    background-color: #F8B7C4;
+    border-radius: 10%;
+}
+
+.card{
+    width:240px;
+    padding: 30px;
+    margin: 25px;
+    font-size: 15px;
+    background-color: #F6DFF5;
+    border: 1px solid #F8B7C4;
+    border-radius: 10px;
+}
+.colorProducto {
+    background-color: #F6DFF5;
+}
