@@ -4,7 +4,7 @@ const products = [
         name: 'Semipermanente',
         price: 1350,
         category: 'esmaltes',
-        img: 'images/semipermanente17.png',
+        img: 'https://i.ibb.co/XbXt88f/semipermanente17.png',
         stock: 15,
         description: 'Tono #017'
     },
@@ -13,7 +13,7 @@ const products = [
         name: 'Acryl Gel',
         price: 2600,
         category: 'construccion',
-        img: 'images/coverPinkShinner.png',
+        img: 'https://i.ibb.co/tKH0zP7/cover-Pink-Shinner.png',
         stock: 15,
         description: 'Tono Cover Pink Shinner'
     },
@@ -22,7 +22,8 @@ const products = [
         name: 'Aplique Mariposa x2',
         price: 200,
         category: 'decoracion',
-        img: 'images/mariposaHolo.png',
+        img: 'https://i.ibb.co/cbDHHL8/mariposa-Holo.png'
+        ,
         stock: 15,
         description: 'Tono Holo Rosa'
     },
@@ -31,7 +32,7 @@ const products = [
         name: 'Pincel Kolinsky',
         price: 1870,
         category: 'herramientas',
-        img: 'images/kolinsky4.png',
+        img: 'https://i.ibb.co/vvfHRQK/Kolinsky4.png',
         stock: 15,
         description: 'size #4'
     }
