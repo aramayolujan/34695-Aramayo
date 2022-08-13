@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F6DFF5;
 }
 
 .contenedorContador{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 7em;
-
+    margin-top: 1em;
+    background-color: #F6DFF5;
 }
+

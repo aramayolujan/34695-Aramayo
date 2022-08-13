@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ItemCount from '../ItemCount/ItemCount';
+import ItemCount from '../ItemCounter/ItemCount';
 import './ItemDetail.css'
 const ItemDetail = ({ name, stock, img, price, description}) => {
     const handleOnAdd = (quantity) => {
