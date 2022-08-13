@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={<ItemListContainer greeting='BIENVENIDOS A TIENDA ANGELA BRESCIANO'/>}/>
+          <Route path='/' element={<ItemListContainer greeting='BIENVENIDOS TIENDA ANGELA BRESCIANO'/>}/>
           <Route path='/category/:categoryId' element={<ItemListContainer greeting='LISTADO FILTRADO'/>}/>
           <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
         </Routes>
