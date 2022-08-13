@@ -39,12 +39,12 @@ const ButtonCount = ({ onConfirm, stock, initial = 1 }) => {
         <div className="contenedorContador">
             <div>
                 <div className="contador">
-                    <button onClick={decrement}>-</button>
-                    <p>{count}</p>
-                    <button onClick={increment}>+</button>
+                    <button className="btnDecrement" onClick={decrement}>-</button>
+                    <p className="nroCount">{count}</p>
+                    <button className="btnIncrement" onClick={increment}>+</button>
                 </div>
-                <div>
-                    <button onClick={() => onConfirm(count)}>Agregar al carrito</button>
+                <div className="btnAddToCard">
+                    <button className="btnAddToCard" onClick={() => onConfirm(count)}>Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -65,12 +65,12 @@ const ButtonCount = ({ onConfirm, stock, initial = 1 }) => {
     
         const Count = inputType === 'button' ? ButtonCount : InputCount
         return (
-            <div>
+            <div className='contenedorFinalizar'>
             {
                 quantityToAdd === 0 ? (
                     <Count onConfirm={handleOnAdd} stock={stock} />
                 ) : (
-                    <Link to='/cart'>Finalizar compra</Link>
+                    <Link className="linkFinalizar" to='/cart'>Finalizar compra</Link>
                 )
             }
             </div>

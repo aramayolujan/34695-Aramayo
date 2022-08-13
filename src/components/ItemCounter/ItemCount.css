@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     background-color: #F6DFF5;
+    
 }
 
 .contenedorContador{
@@ -11,4 +12,26 @@
     margin-top: 1em;
     background-color: #F6DFF5;
 }
-
+.btnAddToCard{
+    background-color: #F6DFF5;
+    border:0;
+}
+.btnDecrement{
+    background-color: #F6DFF5;
+    border:0;
+}
+.btnIncrement{
+    background-color: #F6DFF5;
+    border:0;
+}
+.nroCount{
+    background-color: #F6DFF5;
+}
+.linkFinalizar{
+    text-decoration: none;
+    color: black;
+    background-color: #F6DFF5;
+}
+.contenedorFinalizar{
+    background-color: #F6DFF5;
+}
