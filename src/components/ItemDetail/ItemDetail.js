@@ -9,7 +9,7 @@ import CartContext from '../../context/CartContext';
 const ItemDetail = ({ id, name, stock, img, price, description}) => {
     const [quantityToAdd, setQuantityToAdd] = useState(0)
 
-    const { addItem } = useContext(CartContext)
+    const { addItem, getProductQuantity } = useContext(CartContext)
 
 
     const handleOnAdd = (quantity) => {
@@ -22,6 +22,7 @@ const ItemDetail = ({ id, name, stock, img, price, description}) => {
         addItem(productToAdd)
     }
 
+    const productQuantity = getProductQuantity(id)
 
     return (
         <div className='cardDetalle'>
@@ -33,7 +34,7 @@ const ItemDetail = ({ id, name, stock, img, price, description}) => {
             <div>
             {
                     quantityToAdd === 0 ? (
-                        <ItemCount onAdd={handleOnAdd} stock={stock}/>
+                        <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity}/>
                     ) : (
                         <Link to='/cart'>Finalizar compra</Link>
                     )
