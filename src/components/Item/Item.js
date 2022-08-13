@@ -2,6 +2,7 @@ import './Item.css'
 import {Link} from 'react-router-dom'
 
 const Item = ({products}) => {
+
     return (
         <div className='card'>
             <h3 className='colorProducto '>{products.name}</h3>

@@ -3,6 +3,8 @@ import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+
     return (
         <nav className="Navbar">
             <Link to='/' className="nombreMarca">
