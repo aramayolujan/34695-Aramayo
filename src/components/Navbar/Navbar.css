@@ -8,7 +8,10 @@
     background-color: #F6DFF5;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
+    height: 60px;
+}
+.soloColor{
+    background-color: #F6DFF5
 }
 
 .nombreMarcaH4{

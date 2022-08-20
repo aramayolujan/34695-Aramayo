@@ -19,3 +19,13 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+.nroNavbar{
+    background-color: #F6DFF5;
+    text-decoration: none;
+    color:black;
+}
+.carritoNavbar{
+    background-color: #F6DFF5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

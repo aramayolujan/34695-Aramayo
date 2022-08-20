@@ -17,7 +17,7 @@ const ItemDetail = ({ id, name, stock, img, price, description}) => {
         console.log('agregue al carrito')
         console.log(quantity)
         const productToAdd = {
-            id,name,price, quantity
+            id,name,price, quantity, img
         }
         addItem(productToAdd)
     }

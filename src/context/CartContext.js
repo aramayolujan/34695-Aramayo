@@ -13,7 +13,8 @@ export const CartContextProvider =({children}) => {
             if(prod.id === productToAdd.id) {
                 const productUpdated = {
                     ...prod,
-                    quantity: productToAdd.quantity
+                    quantity: productToAdd.quantity,
+                    
                 }
                 return productUpdated
             } else {
@@ -53,8 +54,17 @@ export const CartContextProvider =({children}) => {
     return product?.quantity
   }
 
+  const total = () =>{
+    let precioTotal = 0;
+    cart.forEach(prod => {
+      precioTotal += parseInt(prod.price)*prod.quantity
+      console.warn(precioTotal)
+    })
+    return precioTotal
+  }
+
   return (
-    <CartContext.Provider value={{cart, addItem, getQuantity, existeCart,eliminarItem, limpiarCarrito, getProductQuantity }}>
+    <CartContext.Provider value={{cart, addItem, getQuantity, existeCart,eliminarItem, limpiarCarrito, getProductQuantity, total }}>
         {children}
     </CartContext.Provider>
   )

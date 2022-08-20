@@ -4,15 +4,20 @@ import CartContext from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
-    const {getQuantity} = useContext(CartContext)
-    const quantity = getQuantity()
+    const {getQuantity, total } = useContext(CartContext)
+    const quantity = getQuantity();
+    const totalFinal = total();
 
-    return (
-        <Link to='/cart' className='contenedorCarrito'>
+    return(
+        quantity > 0 && (
+        <Link to='/cart' className='carritoNavbar'>
             <img className='carrito'  src='https://i.ibb.co/Yf2480f/carrito.png' alt='CartWidget'  />
-            {quantity}
+            <p  className='nroNavbar'>{ quantity }</p>
         </Link>
+       )
     )
 }
+
+
 
 export default CartWidget
