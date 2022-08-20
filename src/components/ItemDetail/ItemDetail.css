@@ -1,22 +1,33 @@
 .cardDetalle{
-    width:240px;
     padding: 30px;
     margin: 25px;
     font-size: 15px;
     background-color: #F6DFF5;
-    border: 1px solid #F8B7C4;
     border-radius: 10px;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+
 }
 .imgProductoDetalle {
     height: 200px;
     width: 180px;
     margin-top: 10px;
+   
 }
 .imgProductoDetalle:hover {
     transform: scale(1.4, 1.4);
     transition: 2s;
   }
 .colorProductoDetalle {
+    background-color: #F6DFF5;
+}
+.linkFinalizar{
+    border:0;
+    color: black;
+    text-decoration: none;
+    background-color: #F8B7C4;
+    border-radius: 10%;
+}
+.detalle{
     background-color: #F6DFF5;
 }

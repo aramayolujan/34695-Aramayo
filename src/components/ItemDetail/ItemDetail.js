@@ -26,19 +26,23 @@ const ItemDetail = ({ id, name, stock, img, price, description}) => {
 
     return (
         <div className='cardDetalle'>
-            <h3 className='colorProductoDetalle'>{name}</h3>
-            <img className="imgProductoDetalle" src={img}/>
-            <p className='colorProductoDetalle'>{description}</p>
-            <p className='colorProductoDetalle'> ${price}.-</p>
-            <p className='colorProductoDetalle'>stock: {stock}</p>
-            <div>
-            {
-                    quantityToAdd === 0 ? (
-                        <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity}/>
-                    ) : (
-                        <Link to='/cart'>Finalizar compra</Link>
-                    )
-                }
+            <div className='detalle'>
+                <h3 className='colorProductoDetalle'>{name}</h3>
+                <img className="imgProductoDetalle" src={img}/>
+            </div>
+            <div className='detalle'>
+                <p className='colorProductoDetalle'>{description}</p>
+                <p className='colorProductoDetalle'> ${price}.-</p>
+                <p className='colorProductoDetalle'>stock: {stock}</p>
+                <div className='colorProductoDetalle'>
+                    {
+                        quantityToAdd === 0 ? (
+                            <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity}/>
+                        ) : (
+                            <Link to='/cart' className='linkFinalizar'>Finalizar compra</Link>
+                        )
+                    }
+                </div>
             </div>
         </div>
     )
