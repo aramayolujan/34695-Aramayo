@@ -22,8 +22,7 @@ const products = [
         name: 'Aplique Mariposa x2',
         price: 200,
         category: 'decoracion',
-        img: 'https://i.ibb.co/cbDHHL8/mariposa-Holo.png'
-        ,
+        img: 'https://i.ibb.co/cbDHHL8/mariposa-Holo.png',
         stock: 15,
         description: 'Tono Holo Rosa'
     },
