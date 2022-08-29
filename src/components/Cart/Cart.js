@@ -29,7 +29,10 @@ const CartDetail = () =>{
             <button onClick={() => eliminarItem(prod.id)} className='linkFinalizar'>remover</button>
             </div>)}
             <div className='footerCarrito'>
-            {prodInCart > 0 ? <button onClick={() => limpiarCarrito()} className='linkFinalizar'>Vaciar Carrito</button> : <Link to="/" className='linkFinalizar'>Volver al Inicio</Link>}
+            {prodInCart > 0 ? <button onClick={() => limpiarCarrito()} className='linkFinalizar'>Vaciar Carrito</button> : 
+            <Link to="/" className='linkFinalizar'>Volver al Inicio</Link>}
+            <Link to='/checkout' className='linkFinalizar'>Checkout</Link>
+
             <div className='footerCarritoDescripcion'> Cantidad de Productos: {prodInCart} </div>
             <div className='footerCarritoDescripcion'> Total de Compra: ${compraTotal} </div>
             </div>
