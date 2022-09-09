@@ -10,7 +10,7 @@ La aplicacion consiste en un ecommerce que por el momento permite ver el detalle
    *git clone https://github.com/aramayolujan/34695-aramayo
 * Instalar las dependencias e iniciar el servidor 
    *npm install
-   *nrpm start
+   *npm start
 
 ### Librerias Utilizadas
 
