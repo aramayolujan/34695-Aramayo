@@ -1,3 +1,4 @@
+import './Checkout.css'
 import {useState, useContext } from "react"
 import CartContext from "../../context/CartContext"
 import { db } from "../../service/firebase"
@@ -98,32 +99,47 @@ const Checkout = () => {
 
    
         /* <button className="linkFinalizar" onClick={crearOrden}>Generar orden</button> */
-        return (
-            <>
-                <h1>Finalizar compra</h1>
-                <div >
-                    <form onSubmit={crearOrden }>
+    return (
+        <>
+            <h1>Finalizar compra</h1>
+            <form onSubmit={crearOrden } class="formularioContacto">
+            <section>
+                <div className="formularioContenido">
                         <label>Nombre: </label>
-                        <input type='text' name="campusFirstName" placeholder="Nombre" />
+                        <input className="contenidoFormulario" type='text' name="campusFirstName" placeholder="Nombre" />
+                    </div>
+                    <div className="formularioContenido">
                         <label>Apellido: </label>
-                        <input type='text' name="campusLastName" placeholder="Apellido" />
+                        <input className="contenidoFormulario" type='text' name="campusLastName" placeholder="Apellido" />
+                    </div>
+                    <div className="formularioContenido">
                         <label>Direccion: </label>
-                        <input type='text' name="campusAdress" placeholder="Direccion" />
+                        <input className="contenidoFormulario" type='text' name="campusAdress" placeholder="Direccion" />
+                    </div>   
+                    <div className="formularioContenido">
                         <label>Ciudad: </label>
-                        <input type='text' name="campusCity" placeholder="Ciudad" />
+                        <input className="contenidoFormulario" type='text' name="campusCity" placeholder="Ciudad" />
+                    </div>   
+                    <div className="formularioContenido">
                         <label>Telefono: </label>
-                        <input type='text' name="campusPhone" placeholder="Telefono" />
+                        <input className="contenidoFormulario" type='text' name="campusPhone" placeholder="Telefono" />
+                    </div>    
+                    <div className="formularioContenido">
                         <label>Provincia: </label>
-                        <input type='text' name="campusState" placeholder="Provincia" />
+                        <input className="contenidoFormulario" type='text' name="campusState" placeholder="Provincia" />   
+                    </div>   
+                    <div className="formularioContenido">
                         <label>E-Mail: </label>
-                        <input type='email' name="campusEmail" placeholder="E-Mail" />
+                        <input className="contenidoFormulario" type='email' name="campusEmail" placeholder="E-Mail" />
+                    </div>   
+                    <div className="formularioContenido">
                         <button className="linkFinalizar">Generar Orden</button>
-
-                    </form>
-                </div>
-                    <p className='noData'>{noData}</p>
-            </>
-        )
+                    </div>    
+                </section>
+            </form>
+            <p className='noData'>{noData}</p>
+        </>
+    )
 }
 
 export default Checkout;
