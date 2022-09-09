@@ -7,7 +7,10 @@ La aplicacion consiste en un ecommerce que por el momento permite ver el detalle
 ## Instalación
 * Instalar Node.js
 * Clonar el repositorio 
+   git clone https://github.com/aramayolujan/34695-aramayo
 * Instalar las dependencias e iniciar el servidor 
+   npm install
+   nrpm start
 
 ### Librerias Utilizadas
 
